@@ -86,6 +86,8 @@
   height: 4em;
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
+  border-radius: 4em;
   @include translate3d(0,0,0);
   .corner { 
     width: 50%;
@@ -94,6 +96,9 @@
     left: 25%;
     top: 25%;
     background: #302f4d;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    overflow: hidden;
     &:nth-child(1) {
       z-index: 2;
       border-radius: 100% 0 0 0;
