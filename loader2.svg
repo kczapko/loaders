@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="loader-svg-icon">
+<g>
+<animateTransform
+  attributeName="transform"
+  dur="4s"
+  type="rotate"
+  from="0 50 50"
+  to="360 50 50"
+  repeatCount="indefinite"  />
+  <path id="c4" fill="#302f4d" d="M50,50 Q50,50 0,50 Q3,97 50,100Z"/>
+  <path id="c3" fill="#0e6aa9" d="M50,50 Q50,50 0,50 Q3,3 50,0Z">
+    <animate 
+      attributeName="d"
+      dur="2s"
+      repeatCount="indefinite"
+      values="M50,50 Q50,50 0,50 Q3,3 50,0Z;
+              M50,50 Q50,50 0,50 Q3,3 50,0Z;
+              M50,50 Q50,50 0,50 Q3,3 50,0Z;
+              M50,50 Q50,50 0,50 Q0,50 50,50Z;
+              M50,50 Q50,50 0,50 Q3,97 50,100Z;
+              M50,50 Q50,50 0,50 Q3,97 50,100Z;
+              M50,50 Q50,50 0,50 Q3,97 50,100Z;
+              M50,50 Q50,50 0,50 Q0,50 50,50Z;
+              M50,50 Q50,50 0,50 Q3,3 50,0Z;"/>
+    <animate 
+      attributeName="fill"
+      dur="2s"
+      repeatCount="indefinite"
+      calcMode="discrete"
+      values="#302f4d;
+              #302f4d;
+              #0e6aa9;
+              #2999d5;
+              #27c4f3;
+              #27c4f3;
+              #27c4f3;
+              #302f4d;"/>
+  </path>
+  <path id="c2" fill="#2999d5" d="M50,50 Q50,50 100,50 Q97,97 50,100Z">
+    <animate 
+      attributeName="d"
+      dur="2s"
+      repeatCount="indefinite"
+      values="M50,50 Q50,50 100,50 Q97,97 50,100Z;
+              M50,50 Q50,50 50,50 Q50,100 50,100Z;
+              M50,50 Q50,50 0,50 Q3,97 50,100Z;
+              M50,50 Q50,50 0,50 Q3,97 50,100Z;
+              M50,50 Q50,50 0,50 Q3,97 50,100Z;
+              M50,50 Q50,50 50,50 Q50,100 50,100Z;
+              M50,50 Q50,50 100,50 Q97,97 50,100Z;
+              M50,50 Q50,50 100,50 Q97,97 50,100Z;
+              M50,50 Q50,50 100,50 Q97,97 50,100Z;"/>
+    <animate 
+      attributeName="fill"
+      dur="2s"
+      repeatCount="indefinite"
+      calcMode="discrete"
+      values="#302f4d;
+              #0e6aa9;
+              #0e6aa9;
+              #0e6aa9;
+              #0e6aa9;
+              #0e6aa9;
+              #302f4d;
+              #302f4d;"/>
+  </path>
+  <path id="c1" fill="#27c4f3" d="M50,50 Q50,50 100,50 Q97,3 50,0Z">
+    <animate 
+      attributeName="d"
+      dur="2s"
+      repeatCount="indefinite"
+      values="M50,50 Q50,50 100,50 Q97,3 50,0Z;
+              M50,50 Q50,50 50,50 Q50,0 50,0Z;
+              M50,50 Q50,50 0,50 Q3,3 50,0Z;
+              M50,50 Q50,50 0,50 Q0,50 50,50Z;
+              M50,50 Q50,50 0,50 Q3,97 50,100Z;
+              M50,50 Q50,50 50,50 Q50,100 50,100Z;
+              M50,50 Q50,50 100,50 Q97,97 50,100Z;
+              M50,50 Q50,50 100,50 Q100,50 50,50Z;
+              M50,50 Q50,50 100,50 Q97,3 50,0Z;"/>
+    <animate 
+      attributeName="fill"
+      dur="2s"
+      repeatCount="indefinite"
+      calcMode="discrete"
+      values="#302f4d;
+              #0e6aa9;
+              #0e6aa9;
+              #2999d5;
+              #2999d5;
+              #27c4f3;
+              #27c4f3;
+              #302f4d;"/>
+  </path>
+</g>
+</svg>

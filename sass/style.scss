@@ -1,0 +1,176 @@
+@import "compass/css3";
+
+@include keyframes(cornerOne) {
+  0%, 25%, 100% {
+    @include transform(translate(-50%, -50%) rotateX(0deg));
+  }
+  50%, 75% {
+    @include transform(translate(-50%, -50%) rotateX(-180deg));
+  }
+}
+
+@include keyframes(cornerTwo) {
+  0%, 100% {
+    @include transform(translate(50%, -50%) rotateX(0deg) rotateY(0deg));
+  }
+  25% {
+    @include transform(translate(50%, -50%) rotateX(0deg) rotateY(-180deg));
+  }
+  50% {
+    @include transform(translate(50%, -50%) rotateX(-180deg) rotateY(-180deg));
+  }
+  75% {
+    @include transform(translate(50%, -50%) rotateX(-180deg) rotateY(0deg));
+  }
+}
+
+@include keyframes(cornerThree) {
+  0%, 75%, 100% {
+    @include transform(translate(50%, 50%) rotateY(0deg));
+  }
+  25%, 50% {
+    @include transform(translate(50%, 50%) rotateY(-180deg));
+  }
+}
+
+@include keyframes(cornerOneBackground) {
+  0% {
+    background: #302f4d;
+  }
+  25% {
+    background: #0e6aa9;
+  }
+  37.5% {
+    background: #2999d5;
+  }
+  50% {
+    background: #27c4f3;
+  }
+  87.5% {
+    background: #302f4d;
+  }
+}
+
+@include keyframes(cornerTwoBackground) {
+  0% {
+    background: #302f4d;
+  }
+  12.5% {
+    background: #0e6aa9;
+  }
+  37.5% {
+    background: #2999d5;
+  }
+  62.5% {
+    background: #27c4f3;
+  }
+  87.5% {
+    background: #302f4d;
+  }
+}
+
+@include keyframes(cornerThreeBackground) {
+  0% {
+    background: #302f4d;
+  }
+  12.5% {
+    background: #0e6aa9;
+  }
+  75% {
+    background: #302f4d; 
+  }
+}
+
+@include keyframes(rotation) {
+  100% {
+    @include rotate(360deg);
+  }
+}
+
+.loader { 
+  width: 4em;
+  height: 4em;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 4em;
+  .corner { 
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    background: #302f4d;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    overflow: hidden;
+    &:nth-child(1) {
+      z-index: 2;
+      border-radius: 100% 0 0 0;
+      @include transform-origin(100%, 100%);
+      @include translate(-50%, -50%);
+      @include animation(cornerOne 2s infinite linear, cornerOneBackground 2s steps(1) infinite);
+    }
+    &:nth-child(2) {
+      z-index: 4;
+      border-radius: 0 100% 0 0;
+      @include transform-origin(0, 100%);
+      @include translate(50%, -50%);
+      @include animation(cornerTwo 2s infinite linear, cornerTwoBackground 2s steps(1) infinite);
+    }
+    &:nth-child(3) {
+      z-index: 3;
+      border-radius: 0 0 100% 0;
+      @include transform-origin(0, 0);
+      @include translate(50%, 50%);
+      @include animation(cornerThree 2s infinite linear, cornerThreeBackground 2s steps(1) infinite);
+    }
+    &:nth-child(4) {
+      z-index: 1;
+      border-radius: 0 0 0 100%;
+      @include transform-origin(100%, 0);
+      @include translate(-50%, 50%);
+    }
+  }
+}
+
+.loader-svg-icon {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+}
+
+.rotation {
+  @include animation(rotation 4s infinite linear);
+  &.loader {
+
+  }
+}
+
+.white {
+  background: #fff;
+}
+
+.black {
+  background: #000;
+  color: #fff;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  padding: 2em;
+  text-align: center;
+  width: 33.33%;
+  &:first-child {
+    text-align: right;
+    font-weight: bold;
+  }
+}
+
+img {
+  width: 4em;
+  height: 4em;
+}
